@@ -7,22 +7,19 @@ var bol = vals.map(function(x){return Boolean(x);});
 
 var numPush = function() {
   for(var i = 0; i < num.length; i++) {
-    var iterate = 1;
-    var proc = 'num' + iterate;
-	document.getElementById('#num'+(i+1)).textContent = num[i];
+	document.querySelector('#num'+(i+1)).textContent = num[i];
   }
 };
 var strPush = function() {
   for(var i = 0; i < str.length; i++) {
-	document.getElementById('#str'+(i+1)).textContent = str[i];
+	document.querySelector('#str'+(i+1)).textContent = str[i];
   }
 };
 var bolPush = function() {
   for(var i = 0; i < bol.length; i++) {
-	document.getElementById('#bol'+(i+1)).textContent = bol[i];
+	document.querySelector('#bol'+(i+1)).textContent = bol[i];
   }
 };
-
 numPush();
 strPush();
 bolPush();
